@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# 🛡️ Password Generator  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built with React, TypeScript, and Tailwind CSS. This tool lets users create secure, customizable passwords with a smooth UI and transitions.<br>
 
-Currently, two official plugins are available:
+![Password Generator Preview](./Password Generator.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
+✅ Customizable Passwords – Select lowercase, uppercase, numbers, symbols, and spaces.  <br>
+✅ Duplicate Prevention – Toggle to exclude repeating characters.  <br>
+✅ Length Control – Adjust password length dynamically.  <br>
+✅ Copy to Clipboard – One-click SVG button to copy the generated password.  <br>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Installation & Usage
+1️⃣ Clone the repo:  <br>
+```sh
+git clone https://github.com/your-username/password-generator.git
+cd password-generator
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2️⃣ Install dependencies:  <br>
+```sh
+npm install
+```
+3️⃣ Run the app:  <br>
+```sh
+npm run dev
+```
+4️⃣ Open in browser:  <br>
+```
+http://localhost:5173
 ```
