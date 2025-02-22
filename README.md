@@ -2,7 +2,7 @@
 
 Built with React, TypeScript, and Tailwind CSS. This tool lets users create secure, customizable passwords with a smooth UI and transitions.<br>
 
-![Password Generator Preview](./Password Generator.png)
+![Password Generator Preview](./PasswordGenerator.png)
 
 ---
 
