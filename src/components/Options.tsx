@@ -1,5 +1,5 @@
 import React from "react";
-import * as Switch from "@radix-ui/react-switch"; // Import Radix UI Switch
+import * as Switch from "@radix-ui/react-switch";
 
 interface OptionsProps {
   options: {
@@ -20,10 +20,10 @@ const Options: React.FC<OptionsProps> = ({ options, setOptions }) => {
 
   return (
     <div className="mt-6 text-white">
-      <h2 className="text-lg mb-2">Password Settings</h2>
-      <div className="grid grid-cols-2 gap-3">
+      <h2 className="text-lg mb-2 font-semibold">Password Settings</h2>
+      <div className="grid grid-cols-2 gap-4">
         {Object.entries(options).map(([key, value]) => (
-          <div key={key} className="flex items-center gap-2">
+          <div key={key} className="flex items-center gap-2 border border-gray-600 p-3 rounded-lg bg-black/50">
             <Switch.Root
               checked={value}
               onCheckedChange={() => handleToggle(key as keyof typeof options)}

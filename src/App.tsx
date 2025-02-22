@@ -18,9 +18,9 @@ const App = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoaded(true); // Allow the content to be revealed after 2 seconds
+      setIsLoaded(true);
     }, 500);
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer);
   }, []);
 
   const generatePassword = () => {
@@ -65,7 +65,8 @@ const App = () => {
 
   return (
     <div className="animated-bg min-h-screen flex items-center justify-center text-white">
-      <div className={`bg-black/80 p-8 rounded-lg shadow-lg text-center w-full max-w-lg transition-all ${isLoaded ? 'translate-y-0' : 'translate-y-[100px]'}`}>
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-md z-0"></div>
+      <div className={`bg-black/80 p-10 rounded-2xl shadow-lg text-center w-full max-w-2xl transition-all ${isLoaded ? 'translate-y-0' : 'translate-y-[100px]'}`}>
         <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">
           Password Generator
         </h1>
@@ -93,7 +94,6 @@ const App = () => {
                     onClick={handleCopy}
                     className="text-white cursor-pointer"
                   >
-                    {/* SVG for the copy icon */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6 text-pink-500 hover:text-pink-600 transition"
